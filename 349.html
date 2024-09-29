@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Payment Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 320px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .button-grid a {
+            display: block;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+            transition: background-color 0.2s;
+        }
+
+        .button-grid a:hover {
+            background-color: #e0e0e0;
+        }
+
+        .button-grid img {
+            width: 80px;
+            height: auto;
+        }
+
+        .other-upi {
+            margin-top: 10px;
+            background-color: #f1f1f1;
+            padding: 8px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .other-upi:hover {
+            background-color: #e0e0e0;
+        }
+
+        .how-to {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        .how-to:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Select your UPI app</h2>
+                <h3>Ammount :- ₹ 349</h3>
+        <div class="button-grid">
+            <a href="upi://pay?pa=winloots@ybl&pn=Recharge &am=349&cu=INR&tn=TN240917761365333&"><img src="bhim-logo.png" alt="BHIM"></a>
+            <a href="upi://pay?pa=winloots@ybl&pn=Recharge &am=349&cu=INR&tn=TN240917761365333&"><img src="phonepe-logo.png" alt="PhonePe"></a>
+            <a href="upi://pay?pa=winloots@ybl&pn=Recharge &am=349&cu=INR&tn=TN240917761365333&"><img src="paytm-logo.png" alt="PayTM"></a>
+            <a href="upi://pay?pa=winloots@ybl&pn=Recharge &am=349&cu=INR&tn=TN240917761365333&"><img src="gpay-logo.png" alt="Google Pay"></a>
+        </div>
+        <a href="upi://pay?pa=winloots@ybl&pn=Recharge &am=349&cu=INR&tn=TN240917761365333&" class="other-upi">Other UPI Apps</a>
+        <div class="how-to">How to pay using UPI?</div>
+    </div>
+
+</body>
+</html>

